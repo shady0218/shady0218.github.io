@@ -1,0 +1,194 @@
+/* Clear standard format */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #0D1321;
+}
+
+/* Apply Fonts */
+body {
+    font-family: 'Space Mono', 'Courier New', Courier, monospace;
+    color: #F9F7F0;
+}
+
+h1, h2, h3 {
+    font-family: 'Shadows Into Light', 'Courier New', Courier, monospace;
+    color: #0496FF;
+}
+
+/* Header Format */
+#intro {
+    font-weight: bold;
+    font-size: 4.5em;
+    padding-top: 4.5em;
+    padding-bottom: 1em;
+    background-image: url('images/dogComputer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1.25em;
+}
+
+nav {
+    margin: 0;
+    padding: 20px 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    text-decoration: none;
+    padding: 5px 15px;
+    border: 1px solid #F9F7F0;
+    font-size: 1.75em;
+    font-weight: bold;
+    color: #0D1321;
+    background-color: #0496FF;
+    margin: 0 auto;
+}
+
+nav li a:hover {
+    color: #0496FF;
+    background-color: #0D1321;
+    border: 1px solid #0496FF;
+}
+
+header {
+    margin-bottom: 8em;
+}
+
+/* Detail Format */
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+section {
+    margin-top: 2.5em;
+}
+
+main h2 {
+    margin-bottom: 5px;
+    font-size: 2.5em;
+}
+
+main p {
+    text-align: left;
+    margin-bottom: 10px;
+    color: #C5D1E7;
+}
+
+main h3 {
+    text-align: left;
+    color: #F9F7F0;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+main h4 {
+    text-align: left;
+    color: #0496FF;
+}
+
+article {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+cite {
+    font-size: .75em;
+}
+
+article p {
+    text-indent: 15px;
+}
+
+/* Table Format */
+table {
+    border: 1px solid #F9F7F0;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+}
+
+td, th {
+    border: 1px solid #F9F7F0;
+    padding: 5px;
+}
+
+thead th {
+    background-color: #17223A;
+    text-align: center;
+}
+
+tbody td {
+    text-align: left;
+    font-family: monospace;
+    font-size: 1.15em;
+}
+
+tbody th {
+    color: #0496FF;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.25em;
+}
+
+.left {
+    text-align: left;
+}
+
+tbody th a {
+    text-decoration: none;
+    color: #0496FF;
+}
+
+tbody th a:hover {
+    color: #F9F7F0;
+}
+
+/* Footer Format */
+footer {
+    margin-bottom: 75px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #0496FF;
+}
+
+footer a:hover {
+    color: #F9F7F0;
+}
+
+.highlight {
+    color: #ffb703;
+}
+
+#y1 {
+    color: yellow;
+}
+#y2 {
+    color: #FFFF00;
+}
+#y3 {
+    color: rgb(255, 255, 0);
+}
+#y4 {
+    color: rgba(255, 255, 0, 75%);
+}
+#y5 {
+    color: hsl(60 100%, 50%);
+}
+#y6 {
+    color: hsla(60, 100%, 50%, 75%);
+}
+
+
+
+
+

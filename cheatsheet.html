@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cheatsheetstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>WebDev Cheatsheet</title>
+</head>
+
+<body>
+   <header>
+        <h1 id="intro">My WebDev Cheatsheet</h1>
+        <nav>
+            <ul>
+                <li><a href="#html">&lt;HTML&gt;</a></li>
+                <li><a href="#css">&lbrace;CSS&rbrace;</a></li>
+                <li><a href="#java">JavaScript</a></li>
+                <li><a href="#helpful">Helpful Links</a></li>
+            </ul>   
+        </nav>
+   </header>
+   
+   <main>
+        <section id="html">
+            <h2>&lt; HTML / &gt;</h2>
+            <h3>Tags</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Title</th>
+                        <th>Example</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th><code>&lt;!-- --&gt;</code></th>
+                        <td>Comment</td>
+                        <td><code>&lt;!-- Notes for future reference --&gt;</code></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th><code>&lt;!DOCTYPE&gt;</code></th>
+                        <td>Document Type</td>
+                        <td><code>&lt;!DOCTYPE html&gt;</code></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th><code>&lt;a&gt;</code></th>
+                        <td>Link</td>
+                        <td><code>&lt;a href="URL" target="_blank"&gt;Display Text&lt;/a&gt;</code></td>
+                        <td>target="_blank" opens new tab</td>
+                    </tr>
+                    <tr>
+                        <th><code>&lt;img&gt;</code></th>
+                        <td>Image</td>
+                        <td><code>
+                            &lt;img src="URL" alt=""&gt;<br>
+                        </code></td>
+                        <td>Best practice to include alt text for accessability and screen readers.</td>
+                    </tr>
+                    <tr>
+                        <th><code>&lt;figure&gt;</code></th>
+                        <td>Figure</td>
+                        <td><code>
+                            &lt;figure&gt;<br>
+                            &nbsp;&lt;img src="URL" alt=""&gt;<br>
+                            &nbsp;&lt;figcaption&gt;Caption Text&lt;/figcaption&gt;<br>
+                            &lt;/figure&gt;
+                        </code></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th><code>&lt;h1&gt; to &lt;h6&gt;</code></th>
+                        <td>Headers</td>
+                        <td>&lt;h1&gt;Heading Text&lt;/h1&gt;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th><code>&lt;ul&gt; or &lt;ol&gt;</code></th>
+                        <td><u>U</u>norderd or <u>O</u>rdered List</td>
+                        <td>
+                            &lt;ul&gt;<br>
+                            &nbsp;&lt;li&gt;Item&lt;/li&gt;<br>
+                            &nbsp;&lt;li&gt;Item&lt;/li&gt;<br>
+                            &lt;/ul&gt;<br>
+                        </td>
+                        <td>Use &lt;ul&gt; for an Unordered List and &lt;ol&gt; for an Ordered List</td>
+                    </tr>
+                    <tr>
+                        <th><code>&lt;nav&gt;</code></th>
+                        <td>Navigation Section</td>
+                        <td>
+                            &lt;nav&gt;<br>
+                            &nbsp;&lt;ul&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;Item&lt;/li&gt;<br>
+                            &nbsp;&nbsp;&lt;li&gt;Item&lt;/li&gt;<br>
+                            &nbsp;&lt;/ul&gt;<br>
+                            &lt;nav&gt;
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        <h3>Boiler Plate HTML Format</h3>
+        <table>
+            <tr>
+                <td><code>
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang="en"&gt;<br>
+                    &lt;head&gt;<br>
+                    &nbsp;&lt;meta charset="UTF-8"&gt;<br>
+                    &nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                    &nbsp;&lt;link rel="stylesheet" href="styles.css"&gt;<br>
+                    &nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br>
+                    &lt;/head&gt;<br>
+                    <br>
+                    &lt;body&gt;<br><br>
+                    &lt;header&gt;<br>
+                    &nbsp;&lt;!-- Header Elements go Here --&gt;<br>
+                    &lt;/header&gt;<br><br>
+                    &lt;main&gt;<br>
+                    &nbsp;&lt;!-- Main Elements go Here --&gt;<br>
+                    &lt;/main&gt;<br><br>
+                    &lt;footer&gt;<br>
+                    &nbsp;&lt;!-- Footer Elements go Here --&gt;<br>
+                    &lt;/footer&gt;<br><br>
+                    &lt;/body&gt;
+                </code></td>
+            </tr>
+        </table>
+        <h3>Table Structure</h3>
+        <table>
+            <tr>
+                <td><code>
+                    &lt;table&gt;<br>
+                    &lt;thead&gt;<br>
+                    &lt;tr&gt;<br>
+                    &nbsp;&lt;th&gt;Heading 1&lt;/th&gt;<br>
+                    &nbsp;&lt;th&gt;Heading 2&lt;/th&gt;<br>
+                    &nbsp;&lt;th&gt;Heading 3&lt;/th&gt;<br>
+                    &lt;/tr&gt;<br>
+                    &lt;/thead&gt;<br><br>
+                    &lt;tbody&gt;<br>
+                    &lt;tr&gt;<br>
+                    &nbsp;&lt;th&gt;Row Heading&lt;/th&gt;<br>
+                    &nbsp;&lt;td&gt;Detail 1&lt;/td&gt;<br>
+                    &nbsp;&lt;td&gt;Detail 2&lt;/td&gt;<br>
+                    &lt;/tr&gt;<br>
+                    &lt;tr&gt;<br>
+                    &nbsp;&lt;th&gt;Row 2 Heading&lt;/th&gt;<br>
+                    &nbsp;&lt;td colspan="2"&gt;Detail will span two columns&lt;/td&gt;<br>
+                    &lt;/tr&gt;<br>
+                    &lt;/tbody&gt;<br><br>
+                    &lt;tfoot&gt;<br>
+                    &lt;tr&gt;<br>
+                    &nbsp;&lt;td&gt;Footer 1&lt;/td&gt;<br>
+                    &nbsp;&lt;td&gt;Footer 2&lt;/td&gt;<br>
+                    &nbsp;&lt;td&gt;Footer 3&lt;/td&gt;<br>
+                    &lt;/tr&gt;<br>
+                    &lt;/tfoot&gt;<br><br>
+                    &lt;/table&gt;<br>
+                </code></td>
+            </tr>
+        </table>
+        </section>
+        
+        <section id="css">
+            <h2>&lbrace; CSS &rbrace;</h2>
+            <h3>Syntax</h3>
+            <table>
+                    <tr>
+                        <td><code>
+                            <span class="highlight">selector </span>&lbrace;<br>
+                            &nbsp;property: value;<br>
+                            &nbsp;property: value;<br>
+                            &rbrace;
+                        </code></td>
+                    </tr>
+            </table>
+            <h3>Selectors</h3>
+            <table>
+                <thead>
+                    <th>Selector</th>
+                    <th>Desription</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="left">*</th>
+                        <td>selects every element</td>
+                    </tr>
+                    <tr>
+                        <th class="left">section</th>
+                        <td>all selection tags</td>
+                    </tr>
+                    <tr>
+                        <th class="left">h1, p</th>
+                        <td>all h1 and p tags</td>
+                    </tr>
+                    <tr>
+                        <th class="left">section p</th>
+                        <td>all p tags within a section</td>
+                    </tr>
+                    <tr>
+                        <th class="left">.classname</th>
+                        <td>all taks with a class selected name</td>
+                    </tr>
+                    <tr>
+                        <th class="left">#id</th>
+                        <td>all all elements inside an id item</td>
+                    </tr>
+                    <tr>
+                        <th class="left">p#classname</th>
+                        <td>all p elements with the class name</td>
+                    </tr>
+                    <tr>
+                        <th class="left">a:hover</th>
+                        <td>ancor tags hover state</td>
+                    </tr>
+                    <tr>
+                        <th class="left">a:visited</th>
+                        <td>ancor tags visited</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Specificity Calculation</h3>
+            <article>
+                <h4>ID Column</h4>
+                <p>For each ID #example in a matching selector, add 1-0-0 to the weight value.</p>
+                <h4>CLASS Column</h4>
+                <p>For each class selector .example or attribute selector :hover ect. in a matching selector, add 0-1-0 to the weight value.</p>
+                <h4>TYPE Column</h4>
+                <p>For each type selector p, h1, td, and pseudo-element ::before in a matching selector, add 0-0-1 to the weight value.</p>
+                <h4>No value</h4>
+                <p>The universal selector, add 0-0-0 to the weight value.</p>
+                <cite>Source: MDN web docs - Selector weight categories</cite>
+            </article>
+            <h3>Properties</h3>
+            <table>
+                <thead>
+                    <th>Property</th>
+                    <th>Values</th>
+                    <th>Notes</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="left">color:<br>
+                                        background-color:</th>
+                        <td><span id="y1">yellow</span><br>
+                            <span id="y2">#0000FF</span><br>
+                            <span id="y3">rgb(0, 0, 225)</span><br>
+                            <span id="y4">rgba(0, 0, 225, 75%)</span><br>
+                            <span id="y5">hsl(240, 100%, 50%)</span><br>
+                            <span id="y6">hsla(240, 100%, 50%, 75%)</span>
+                        </td>
+                        <td>
+                            named color<br>
+                            HEX Code<br>
+                            rgb<br>
+                            rgba (a is transparency)<br>
+                            hsl<br>
+                            hsla (a is transparency)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="left">background-image:</th>
+                        <td>url('images/dog.jpg')</td>
+                        <td>can be relitive or absolute image.</td>
+                    </tr>
+                    <tr>
+                        <th class="left">border:</th>
+                        <td>weight style color</td>
+                        <td>styles (solid, dotted, dashed, double, groove, ridge, inset, outset, none)</td>
+                    </tr>
+                    <tr>
+                        <th class="left">display:</th>
+                        <td>
+                            block<br>
+                            inline-block<br>
+                            inline
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th class="left">font-size:</th>
+                        <td>1px, 1em, 1rem</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th class="left">font-weight:</th>
+                        <td>regular, bold</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th class="left">font-style:</th>
+                        <td>normal, italic, oblique</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th class="left">margin:</th>
+                        <td>top right bottom left</td>
+                        <td>margin-left, margin-right, margin-top, margin-bottom, margin only sets value for all four.</td>
+                    </tr>
+                    <tr>
+                        <th class="left">opacity:</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th class="left">padding:</th>
+                        <td>padding:</td>
+                        <td>same as margin</td>
+                    </tr>
+                    <tr>
+                        <th class="left">text-decoration:</th>
+                        <td>none, underline, overline, line-through</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th class="left">text-transform:</th>
+                        <td>none, uppercase, lowercase, capital</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th class="left">width:</th>
+                        <td>1px, 1em, 1rem 50%</td>
+                        <td>amount of space element will take up in container.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="java">
+            <h2>JavaScript</h2>
+            <p>Comming Soon.....</p>
+        </section>
+
+        <section id="helpful">
+            <h2>Helpful Links</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Link</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></th>
+                        <td>Documentation and examples for web technologies.</td>
+                    </tr>
+                    <tr>
+                        <th><a href="https://html.spec.whatwg.org/multipage/named-characters.html" target="_blank">HTML Character Reference</a></th>
+                        <td>A table of all character references supported by HTML, and the code points to which the refer.</td>
+                    </tr>
+                    <tr>
+                        <th><a href="https://www.cssfontstack.com/" target="_blank">CSS Font Stack</a></th>
+                        <td>A list of web safe CSS font stacks.</td>
+                    </tr>
+                    <tr>
+                        <th><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></th>
+                        <td>A collection of Google fonts for web usage.</td>
+                    </tr>
+                    <tr>
+                        <th><a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank">Reset CSS</a></th>
+                        <td>Template to reset all CSS elements for a blank slate.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+   </main>
+
+   <footer>
+        <h2>Contact</h2>
+        <p>Web:<a href="https://shady0218.github.io/" target="_blank">shady0218.github.io</a> | Email:<a href="mailto:shady0218@gmail.com">shady0218@gmail.com</a></p>
+   </footer>
+</body>
+</html>
