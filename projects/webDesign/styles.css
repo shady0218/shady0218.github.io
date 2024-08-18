@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    background-color: rgb(0, 8, 20);
+}
+
+/* Fonts */
+h1, h2{
+    font-family: 'Caveat', cursive;
+}
+
+h3, h4, h5, h6, p {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 15px;
+}
+
+h1 {
+    font-size: 75px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* Navigation Bar */
+
+.nav-links ul {
+    margin: 15px auto;
+    padding: 0 15px;
+    text-align: center;
+    border: 1px solid rgba(240, 248, 255, .5);
+    background-color: rgba(240, 248, 255, .15);
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: rgba(240, 248, 255, .5);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.nav-links li a:hover {
+    color: rgb(4, 150, 255);
+}
+
+header h1 {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    color: rgba(4, 150, 255, 1);
+    padding-top: 5px;
+}
+
+/* Section Structure */
+.top-contain {
+    padding: 25px 50px;
+    display: block;
+    overflow: hidden;
+    border: 1px solid rgb(240, 248, 255);
+    border-radius: 15px;
+    width: 85%;
+    margin: 25px auto;
+    height: fit-content;
+    background-color: rgb(0, 29, 61);
+}
+
+.top-contain .title {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    color: rgb(4, 150, 255);
+}
+
+.title p {
+    color: rgb(240, 248, 255);
+}
+
+.top-contain .content {
+    float: right;
+    width: 65%;
+    text-align: center;
+}
+
+/* colors */
+.color-contain {
+    display: inline-block;
+    margin: 2px auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    padding: 20px;
+}
+
+.rich-black {
+    background-color: rgb(0, 8, 20);
+    color: rgb(240, 248, 255);
+}
+
+.oxford-blue {
+    background-color: rgb(0, 29, 61);
+    color: rgb(240, 248, 255);
+}
+
+.dodger-blue {
+    background-color: rgb(4, 150, 255);
+    color: rgb(240, 248, 255);
+}
+
+.mikado-yellow {
+    background-color: rgb(255, 195, 0);
+    color: rgb(0, 8, 20);
+}
+
+.gold {
+    background-color: rgb(255, 214, 10);
+    color: rgb(0, 8, 20);
+}
+
+.alice-blue {
+    background-color: rgb(240, 248, 255);
+    color: rgb(0, 8, 20);
+}
+
+/* fonts Poppins and Caveat */
+.font-contain {
+ border: 1px solid rgb(4, 150, 255);
+ border-radius: 10px;
+ padding: 15px;
+ margin: 5px;
+}
+
+.caveat p {
+    font-family: 'Caveat';
+    color: rgb(240, 248, 255);
+    font-size: 60px;
+}
+
+.caveat .font-ex {
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.poppins p {
+    font-family: 'Poppins';
+    color: rgb(240, 248, 255);
+    font-size: 30px;
+}
+
+.poppins .font-ex {
+    font-size: 1.25em;
+    text-align: justify;
+}
+
+/* text styles */
+
+.text-contain {
+    margin: 5px auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: auto;
+    text-align: center;
+    padding: 20px;
+    color: rgb(240, 248, 255);
+}
+
+/* buttons */
+
+.button-contain {
+    margin: 5px auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: auto;
+    text-align: center;
+    padding: 20px;
+    color: rgb(240, 248, 255);
+}
+
+.btn1 {
+    border: 1px solid rgb(240, 248, 255);
+    border-radius: 5px;
+    box-shadow: 5px 5px;
+    width: 300px;
+    padding: 15px;
+    margin: 15px auto;
+    background-color: rgb(4, 150, 255);
+    font-size: 1.25em;
+}
+
+.btn2 {
+    border: 1px solid rgb(255, 195, 0);
+    border-radius: 5px;
+    box-shadow: 5px 5px;
+    width: 300px;
+    padding: 15px;
+    margin: 15px auto;
+    background-color: rgb(4, 150, 255);
+    font-size: 1.25em;
+    color: rgb(255, 195, 0);
+    cursor: pointer;
+}
+
+.btn3 {
+    border: 1px solid rgb(240, 248, 255);
+    border-radius: 5px;
+    box-shadow: 5px 5px;
+    width: 300px;
+    padding: 15px;
+    margin: 15px auto;
+    background-color: rgb(4, 150, 255);
+    font-size: 1.25em;
+}
+
+.btn3:hover {
+    border: 1px solid rgb(255, 195, 0);
+    border-radius: 5px;
+    box-shadow: 5px 5px;
+    width: 300px;
+    padding: 15px;
+    margin: 15px auto;
+    background-color: rgb(4, 150, 255);
+    font-size: 1.25em;
+    color: rgb(255, 195, 0);
+    cursor: pointer;
+}
+
+.btn3:active {
+    border: 1px solid rgb(255, 195, 0);
+    border-radius: 5px;
+    box-shadow: 5px 5px;
+    width: 300px;
+    padding: 15px;
+    margin: 15px auto;
+    background-color: rgb(240, 248, 255);
+    font-size: 1.25em;
+    color: rgb(255, 195, 0);
+    cursor: pointer;
+}
